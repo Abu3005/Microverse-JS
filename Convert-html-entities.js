@@ -17,7 +17,7 @@
 
 
   function convertHTML(str) {
-    var temp = str.split("");
+    var temp = str.split(""); //split without space
   
     for (var i = 0; i < temp.length; i++) {
       switch (temp[i]) {
@@ -39,7 +39,7 @@
       }
     }
   
-    temp = temp.join("");
+    temp = temp.join(""); //join without default bcos it uses comma as default
     return temp;
   }
   convertHTML("Dolce & Gabbana");

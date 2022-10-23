@@ -11,7 +11,7 @@ function catAndMouse(x, y, z) {
         b = "Mouse C"
     }
     return a + "\r\n" + b;*/
-    let catAPos = Math.abs(z - x);
+    let catAPos = Math.abs(z - x); //Absolute value z - x
     let catBPos = Math.abs(z - y);
     if (catAPos < catBPos) {
         return "Cat A";

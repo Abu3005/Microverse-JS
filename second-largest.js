@@ -1,7 +1,13 @@
 function getSecondLargest(nums) {
-    // Complete the 
-        let k = nums.splice(Math.max(...nums));
-        Math.max(...nums);
-    return k;
+    // Complete th
+    let largest = nums[0];
+    for (let i = 0; i < nums.length; i++) {
+        if (nums[i] > largest) largest = nums[i]
+    }
+    let second_largest = nums[0];
+    for (let i = 0; i < nums.length; i++) {
+        if (nums[i] > second_largest && nums[i] < largest) second_largest = nums[i];
+    }
+    return second_largest;
 }
-console.log([2, 3, 6, 6, 5])
+console.log(getSecondLargest([2, 3, 6, 6, 5]));

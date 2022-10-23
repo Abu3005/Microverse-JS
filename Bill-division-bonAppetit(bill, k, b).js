@@ -1,6 +1,6 @@
 function bonAppetit(bill, k, b) {
     // Write your code here
-    k.splice(1, 1);
+    k.splice(1, 1); // from index 1 delete one element
     let a = k.length;
     let total = 0;
     let out;

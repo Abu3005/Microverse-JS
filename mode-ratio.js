@@ -20,5 +20,5 @@ function plusMinus(arr) {
         }
     }
     return ((great / arr.length).toFixed(6) + "\r\n" + (less / arr.length).toFixed(6) + "\r\n" + (count  / arr.length).toFixed(6));
-}
+} //toFixed is d number of decimal e.g d above is 6decimal place
 console.log(plusMinus([-4, 3, -9, 0, 4, 1]))

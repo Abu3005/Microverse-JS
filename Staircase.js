@@ -2,7 +2,7 @@ function staircase(n) {
     let a = " ";
     let b = "#";
     for (let i = 1; i <= n; i++) {
-        console.log(a.repeat(n - i) + b.repeat(i));
+        console.log(a.repeat(n - i) + b.repeat(i)); // repeat takes only value > 0 and it repeat horizontally
     }
 }
 console.log(staircase(6))
